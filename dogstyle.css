@@ -1,0 +1,313 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+}
+/*
+This is the design of body
+*/
+body{
+    background: url(image/bbb.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 18150px;
+}
+/*
+This is the design of banner
+*/
+header{
+    background: rgba(0, 0, 0, 0.134);
+    backdrop-filter: blur(100px);
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 10px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 9999;
+}
+header img{
+    background-color: rgb(255, 255, 255);
+    border-radius: 25px;
+    height: 120px;
+}
+.color1{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 2px rgb(255, 255, 255);
+    text-align: center;
+}
+.color2{
+    font-family: monospace;
+    font-style: italic;
+    font-size: 20px;
+    text-shadow: 1px 1px white;
+    text-align: center;
+}
+header ul{
+    list-style: none;
+}
+header ul li{
+    display: inline-block;
+    position: relative;
+    border-right: 5px solid rgb(2, 45, 2);
+    border-bottom: 5px solid rgb(2, 45, 2);
+    border-left: 2px solid rgb(2, 45, 2);
+    border-top: 2px solid rgb(2, 45, 2);
+    border-radius: 30px 15px;
+}
+header ul li a{
+    display: block;
+    padding: 28px;
+    color: rgb(6, 60, 6);
+    text-decoration: none;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bolder;
+}
+header ul li a:visited{
+    color: rgb(64, 64, 64);
+}
+header ul li ul.dropdown li{
+    display: block;
+}
+header ul li ul.dropdown{
+    width: 100%;
+    background: rgba(255, 255, 255, 0.797);
+    backdrop-filter: blur(100px);
+    border-radius: 30px 15px;
+    border: 1px solid rgba(0, 0, 0, 0.142);
+    position: absolute;
+    display: none;
+    z-index: 9999;
+}
+header ul li a:hover{
+    background: rgb(4, 61, 4);
+    color: rgb(202, 223, 202);
+    border-radius: 20px 10px;
+}
+header ul li:hover ul.dropdown{
+    display: block;
+}
+/*
+This is the design of navigation
+*/
+nav ul{
+    position: fixed;
+    height: 100%;
+    width: 13%;
+    margin: 0;
+    padding: 0 5px;
+    background: rgb(250, 219, 219);
+    backdrop-filter: blur(50px);
+    box-shadow: 2px 2px 5px rgb(108, 12, 12);
+    list-style: none;
+}
+nav ul li{
+    border-bottom: 2px solid rgb(172, 133, 133);
+}
+nav ul li:last-child{
+    border-bottom: none;
+}
+nav ul li a{
+    padding: 13.8px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+    color: rgb(121, 72, 72);
+}
+nav ul li a:hover{
+    background-color: rgb(169, 111, 111);
+    color: rgb(251, 235, 235);
+    border-radius: 20px;
+}
+.content{
+    float: right;
+    left: 0;
+    width: 87%;
+}
+/*
+This is the design of section
+*/
+section{
+    text-align: left;
+}
+#adultfood h4{
+    padding: 30px;
+    font-size: 20px;
+    background-color: rgba(121, 29, 29, 0.733);
+    color: rgb(252, 242, 242);
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+#puppyfood h4{
+    padding: 30px;
+    font-size: 20px;
+    background-color: rgb(252, 242, 242, 0.733);
+    color: rgba(121, 29, 29);
+}
+#canned h4{
+    padding: 30px;
+    font-size: 20px;
+    background-color: rgba(121, 29, 29, 0.733);
+    color: rgb(252, 242, 242);
+}
+#bones h4{
+    padding: 30px;
+    font-size: 20px;
+    background-color: rgb(252, 242, 242, 0.733);
+    color: rgba(121, 29, 29);
+}
+#leash h4{
+    padding: 30px;
+    font-size: 20px;
+    background-color: rgba(121, 29, 29, 0.733);
+    color: rgb(252, 242, 242);
+}
+#bowl h4{
+    padding: 30px;
+    font-size: 20px;
+    background-color: rgb(252, 242, 242, 0.733);
+    color: rgba(121, 29, 29);
+}
+#daily h4{
+    padding: 30px;
+    font-size: 20px;
+    background-color: rgba(121, 29, 29, 0.733);
+    color: rgb(252, 242, 242);
+}
+#toy h4{
+    padding: 30px;
+    font-size: 20px;
+    background-color: rgb(252, 242, 242, 0.733);
+    color: rgba(121, 29, 29);
+}
+#healthcare h4{
+    padding: 30px;
+    font-size: 20px;
+    background-color: rgba(121, 29, 29, 0.733);
+    color: rgb(252, 242, 242);
+}
+#snacks h4{
+    padding: 30px;
+    font-size: 20px;
+    background-color: rgb(252, 242, 242, 0.733);
+    color: rgba(121, 29, 29);
+}
+.container{
+    max-width: 1200px;
+    margin: auto;
+    background-color: #ffffff00;
+    overflow: auto;
+}
+.picture{
+    margin: 47px;
+    border: 1px solid rgb(225, 225, 225);
+    height: 400px;
+    width: 300px;
+    float: left;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 3px;
+    border-radius: 3px;
+    position: relative;
+    display: block;
+}
+.dropdown2{
+    display: none;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    min-width: 300px;
+    min-height: 150px;
+    box-shadow: 1px 1px 10px 3px;
+    border: 7px outset;
+    z-index: 1;
+}
+.picture:hover .dropdown2{
+    display: block;
+}
+.desc2{
+    padding: 15px;
+    text-align: left;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+.picture img{
+    height: 75%;
+    width: 100%;
+}
+.desc{
+    border-top: 1px solid;
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+/*
+This is the design of footer
+*/
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.082);
+    backdrop-filter: blur(70px);
+    height: 12.5%;
+    z-index: 9999;
+}
+.icon ul{
+    display: flex;
+    justify-content: center;
+    margin: 2px;
+}
+.icon ul li{
+    list-style: none;
+    margin: 0 10px;
+}
+.icon ul li .fab{
+    font-size: 21px;
+}
+.facebook{
+    color: rgb(20, 20, 148);
+}
+.facebook:hover{
+    text-shadow: 0px 0px 30px rgb(255, 255, 255);
+}
+.instagram a{
+    color: rgb(149, 15, 15);
+}
+.instagram:hover{
+    text-shadow: 0px 0px 30px rgb(255, 255, 255);
+}
+.whatsapp{
+    color: rgb(16, 152, 16);
+}
+.whatsapp:hover{
+    text-shadow: 0px 0px 30px rgb(255, 255, 255);
+}
+.tiktok:hover{
+    text-shadow: 0px 0px 30px rgb(255, 255, 255);
+}
+.footer{
+    text-align: center;
+    font-size: 9px;
+}
+/*
+This is the design of video
+*/
+video{
+    float: right;
+    left: 0;
+    width: 87%;
+    background-color: rgb(5, 39, 44);
+    height: 300px;
+}

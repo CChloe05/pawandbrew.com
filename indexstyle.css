@@ -1,0 +1,235 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+}
+/*
+This is the design of body
+*/
+body{
+    background: url(image/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 1195px;
+    overflow-x: hidden;
+}
+/*
+This is the design of banner
+*/
+header{
+    background: rgba(0, 0, 0, 0.134);
+    backdrop-filter: blur(100px);
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 10px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 9999;
+}
+header img{
+    background-color: rgb(255, 255, 255);
+    border-radius: 25px;
+    height: 120px;
+}
+.color1{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 2px rgb(255, 255, 255);
+    text-align: center;
+}
+.color2{
+    font-family: monospace;
+    font-style: italic;
+    font-size: 20px;
+    text-shadow: 1px 1px white;
+    text-align: center;
+}
+header ul{
+    list-style: none;
+}
+header ul li{
+    display: inline-block;
+    position: relative;
+    border-right: 5px solid rgb(2, 45, 2);
+    border-bottom: 5px solid rgb(2, 45, 2);
+    border-left: 2px solid rgb(2, 45, 2);
+    border-top: 2px solid rgb(2, 45, 2);
+    border-radius: 30px 15px;
+}
+header ul li a{
+    display: block;
+    padding: 28px;
+    color: rgb(6, 60, 6);
+    text-decoration: none;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bolder;
+}
+header ul li a:visited{
+    color: rgb(64, 64, 64);
+}
+header ul li ul.dropdown li{
+    display: block;
+}
+header ul li ul.dropdown{
+    width: 100%;
+    background: rgba(255, 255, 255, 0.797);
+    backdrop-filter: blur(100px);
+    border-radius: 30px 15px;
+    border: 1px solid rgba(0, 0, 0, 0.142);
+    position: absolute;
+    display: none;
+    z-index: 9999;
+}
+header ul li a:hover{
+    background: rgb(4, 61, 4);
+    color: rgb(202, 223, 202);
+    border-radius: 20px 10px;
+}
+header ul li:hover ul.dropdown{
+    display: block;
+}
+/*
+This is the design of slideshow
+*/
+.slideshow {
+    height: 400px;
+    width: 400px;
+    margin: 0 auto;
+}
+.slide {
+    float: left;
+}
+.slide img{
+    height: 350px;
+    width: 368.5px;
+}
+.slide-wrapper {
+    width: calc(368.5px * 15);
+    animation: slide 40s ease infinite;
+}
+@keyframes slide {
+    0% {
+        margin-left: 0px;
+    }
+    40% {
+        margin-left: calc(-368.5px * 11);
+    }
+    80% {
+        margin-right: calc(368.5px * 11);
+    }
+}
+h3{
+    font-size: 30px;
+    background-color: rgb(155, 212, 209);
+    text-align: center;
+    font-weight: 600;
+    color: rgb(7, 52, 50);
+    padding: 10px;
+    box-shadow: 2px 2px 5px rgb(6, 80, 77);
+}
+.container{
+    margin: auto;
+    background-color: black;
+}
+/*
+This is the design of video
+*/
+.video{
+    margin: 45px;
+    height: 511.3px;
+    width: 400px;
+    float: left;
+    background-color: black;
+    box-shadow: 1px 1px 3px;
+    border-radius: 10px;
+}
+.video h4{
+    padding: 30px;
+    background-color: rgb(92, 163, 140);
+    color: rgb(197, 251, 233);
+    font-size: 25px;
+    text-shadow: 1px 1px 10px darkcyan;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 9px 9px 0 0;
+}
+.video video{
+    height: 57%;
+    width: 100%;
+}
+.desc{
+    color: white;
+    padding: 6px;
+    text-align: center;
+    font-style: italic;
+    background-color: rgb(92, 163, 140);
+    height: 126.2px;
+    border-radius: 0 0 9px 9px;
+
+}
+span{
+    font-weight: bolder;
+    color: rgb(19, 23, 81);
+}
+/*
+This is the design of footer
+*/
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.082);
+    backdrop-filter: blur(70px);
+    height: 12.5%;
+    z-index: 9999;
+}
+.icon ul{
+    display: flex;
+    justify-content: center;
+    margin: 2px;
+}
+.icon ul li{
+    list-style: none;
+    margin: 0 10px;
+}
+.icon ul li .fab{
+    font-size: 21px;
+}
+.facebook{
+    color: rgb(20, 20, 148);
+}
+.facebook:hover{
+    text-shadow: 0px 0px 30px rgb(255, 255, 255);
+}
+.instagram a{
+    color: rgb(149, 15, 15);
+}
+.instagram:hover{
+    text-shadow: 0px 0px 30px rgb(255, 255, 255);
+}
+.whatsapp{
+    color: rgb(16, 152, 16);
+}
+.whatsapp:hover{
+    text-shadow: 0px 0px 30px rgb(255, 255, 255);
+}
+.tiktok:hover{
+    text-shadow: 0px 0px 30px rgb(255, 255, 255);
+}
+.footer{
+    text-align: center;
+    font-size: 9px;
+}

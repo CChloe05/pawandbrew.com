@@ -1,0 +1,269 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+}
+/*
+This is the design of body
+*/
+body{
+    background-color: #eef0f0;
+    min-height: 1370px;
+}
+/*
+This is the design of banner
+*/
+header{
+    background: rgba(0, 0, 0, 0.134);
+    backdrop-filter: blur(100px);
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 10px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 9999;
+}
+header img{
+    background-color: rgb(255, 255, 255);
+    border-radius: 25px;
+    height: 120px;
+}
+.color1{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 2px rgb(255, 255, 255);
+    text-align: center;
+}
+.color2{
+    font-family: monospace;
+    font-style: italic;
+    font-size: 20px;
+    text-shadow: 1px 1px white;
+    text-align: center;
+}
+header ul{
+    list-style: none;
+}
+header ul li{
+    display: inline-block;
+    position: relative;
+    border-right: 5px solid rgb(2, 45, 2);
+    border-bottom: 5px solid rgb(2, 45, 2);
+    border-left: 2px solid rgb(2, 45, 2);
+    border-top: 2px solid rgb(2, 45, 2);
+    border-radius: 30px 15px;
+}
+header ul li a{
+    display: block;
+    padding: 28px;
+    color: rgb(6, 60, 6);
+    text-decoration: none;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bolder;
+}
+header ul li a:visited{
+    color: rgb(64, 64, 64);
+}
+header ul li ul.dropdown li{
+    display: block;
+}
+header ul li ul.dropdown{
+    width: 100%;
+    background: rgba(255, 255, 255, 0.797);
+    backdrop-filter: blur(100px);
+    border-radius: 30px 15px;
+    border: 1px solid rgba(0, 0, 0, 0.142);
+    position: absolute;
+    display: none;
+    z-index: 9999;
+}
+header ul li a:hover{
+    background: rgb(4, 61, 4);
+    color: rgb(202, 223, 202);
+    border-radius: 20px 10px;
+}
+header ul li:hover ul.dropdown{
+    display: block;
+}
+/*
+This is the design of table
+*/
+table{
+    float: left;
+    padding-top: 20px;
+    padding-left: 65px;
+}
+th, td{
+    padding: 15px;
+}
+.table1 tr:nth-child(1) th, .table2 tr:nth-child(1) th{
+    background-color: #505D58;
+    color: #ffffff;
+    border-radius: 20px;
+}
+.table1 tr:nth-child(2) th, .table2 tr:nth-child(2) th{
+    background-color: #969F95;
+    color: #ffffff;
+    border-radius: 10px;
+}
+.table1 tr:nth-child(3) th{
+    background-color: #f1f8e8;
+    border-bottom: 1px solid;
+    border-right: 1px solid;
+}
+.table1 tr:nth-child(3) td, .table1 tr:nth-child(4) td{
+    background-color: #f1f8e8;
+    border-bottom: 1px solid;
+    border-right: 1px solid;
+}
+.table1 tr:nth-child(5) th{
+    background-color: #e9e7d5;
+    color: rgb(0, 0, 0);
+    border-bottom: 1px solid;
+    border-right: 1px solid;
+}
+.table1 tr:nth-child(5) td, .table1 tr:nth-child(6) td{
+    background-color: #e9e7d5;
+    color: #000000;
+    border-bottom: 1px solid;
+    border-right: 1px solid;
+}
+.table1 tr:nth-child(7) th{
+    background-color: #f1f8e8;
+    border-bottom: 1px solid;
+    border-right: 1px solid;
+}
+.table1 tr:nth-child(7) td, .table1 tr:nth-child(8) td, .table1 tr:nth-child(9) td{
+    background-color: #f1f8e8;
+    border-bottom: 1px solid;
+    border-right: 1px solid;
+}
+.table2 tr:nth-child(3) th, .table2 tr:nth-child(3) td, .table2 tr:nth-child(4) td{
+    background-color: #f1f8e8;
+    border-bottom: 1px solid;
+    border-right: 1px solid;
+}
+.table2 tr:nth-child(5) th, .table2 tr:nth-child(5) td{
+    background-color: #e9e7d5;
+    color: #000000;
+    border-bottom: 1px solid;
+    border-right: 1px solid;
+}
+.table2 tr:nth-child(6) td{
+    background-color: #e9e7d5;
+    color: #000000;
+    border-bottom: 1px solid;
+    border-right: 1px solid;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+.table2 tr:nth-child(7) td, .table2 tr:nth-child(8) td, .table2 tr:nth-child(9) td{
+    background-color: #e9e7d5;
+    color: #000000;
+    border-bottom: 1px solid;
+    border-right: 1px solid;
+}
+.table2 tr:nth-child(10) th{
+    background-color: #f1f8e8;
+    border-bottom: 1px solid;
+    border-right: 1px solid;
+}
+.table2 tr:nth-child(10) td{
+    background-color: #f1f8e8;
+    border-bottom: 1px solid;
+    border-right: 1px solid;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+.table2 tr:nth-child(11) td, .table2 tr:nth-child(12) td, .table2 tr:nth-child(13) td{
+    background-color: #f1f8e8;
+    border-bottom: 1px solid;
+    border-right: 1px solid;
+}
+.table2 tr:nth-child(14) td{
+    background-color: #f1f8e8;
+    border-bottom: 1px solid;
+    border-right: 1px solid;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+.table2 tr:nth-child(15) td, .table2 tr:nth-child(16) td, .table2 tr:nth-child(17) td{
+    background-color: #f1f8e8;
+    border-bottom: 1px solid;
+    border-right: 1px solid;
+}
+.table2 tr:nth-child(18) td{
+    background-color: #f1f8e8;
+    border-bottom: 1px solid;
+    border-right: 1px solid;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+.table2 tr:nth-child(19) td, .table2 tr:nth-child(20) td, .table2 tr:nth-child(21) td{
+    background-color: #f1f8e8;
+    border-bottom: 1px solid;
+    border-right: 1px solid;
+}
+/*
+This is the design of footer
+*/
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.082);
+    backdrop-filter: blur(70px);
+    height: 12.5%;
+    z-index: 9999;
+}
+.icon ul{
+    display: flex;
+    justify-content: center;
+    margin: 2px;
+}
+.icon ul li{
+    list-style: none;
+    margin: 0 10px;
+}
+.icon ul li .fab{
+    font-size: 21px;
+}
+.facebook{
+    color: rgb(20, 20, 148);
+}
+.facebook:hover{
+    text-shadow: 0px 0px 30px rgb(255, 255, 255);
+}
+.instagram a{
+    color: rgb(149, 15, 15);
+}
+.instagram:hover{
+    text-shadow: 0px 0px 30px rgb(255, 255, 255);
+}
+.whatsapp{
+    color: rgb(16, 152, 16);
+}
+.whatsapp:hover{
+    text-shadow: 0px 0px 30px rgb(255, 255, 255);
+}
+.tiktok:hover{
+    text-shadow: 0px 0px 30px rgb(255, 255, 255);
+}
+.footer{
+    text-align: center;
+    font-size: 9px;
+}
